@@ -50,15 +50,16 @@ $ui-breakpoints-smx--min: '371px'; */
 
 .section {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 auto;
-    width: 100%;
 }
 
 
 .container, .header__container {
     display: block;
-    width: 1060px;
+    max-width: 1060px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 auto;
     
@@ -95,7 +96,6 @@ a {
     font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    max-width: 597px;
 }
 
 .navbar__list {
@@ -132,6 +132,7 @@ a {
     border: 2px solid var(--secondary-color);
     border-radius: 20px;
     cursor: pointer;
+    
 
     @media screen and (max-width: 768px) {
         display: block;
@@ -145,10 +146,10 @@ a {
 .header__title {
     font-size: 80px;
     color: var(--secondary-color);
-    width: 846px;
+    max-width: 846px;
+    width: 100%;
     padding-top: 491px;
     padding-bottom: 119px;
-    margin-left: 191px;
 
     @media screen and (max-width: 768px) {
         width: 521px;
@@ -169,36 +170,28 @@ a {
 .header__container-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     z-index: 9;
     background-color: rgb(32, 32, 32, 0);
     height: 92px;
-    gap: 380px;
-    padding: 24px 195px;
     max-width: 1440px;
     width: 100%;
     margin-top: 48px;
-
-    @media screen and (max-width: 1200px) {
-        gap: 150px;
-    }
-
-    @media screen and (max-width: 993px) {
-        max-width: 993px;
-        gap: 50px;
-    }
+    gap: 450px;
 
     @media screen and (max-width: 768px) {
+        justify-content: space-around;
         max-width: 768px;
-        padding-left: 34px;
-        gap: 591px;
+        width: 100%;
     }
 
     @media screen and (max-width: 375px) {
         max-width: 375px;
-        padding-left: 17px;
-        gap: 220px;
+        width: 100%;
+        gap: 190px;
+        
     }
 }
 
@@ -228,7 +221,8 @@ a {
 
 .about-me__content {
     padding: 101px 0;
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         padding: 72px 0;
@@ -248,11 +242,13 @@ a {
     font-size: 48px;
 
     @media screen and (max-width: 768px) {
-        width: 521px;
+        max-width: 521px;
+        width: 100%;
     }
 
     @media screen and (max-width: 375px) {
-        width: 326px;
+        max-width: 326px;
+        width: 100%;
         font-size: 36px;
     }
 }
@@ -260,6 +256,7 @@ a {
 .about-me__subtitle  {
     margin: 40px auto;
     line-height: 1.3;
+    width: 100%;
 
     @media screen and (max-width: 375px) {
         font-size: 15px;
@@ -299,14 +296,14 @@ a {
 .banking-mobile__section {
     background-color: var(--bg-grey-color);
 
-        @media screen and (max-width: 768px) {
-            max-width: 768px;
-            max-height: 1590px;
+    @media screen and (max-width: 768px) {
+        max-width: 768px;
+        max-height: 1590px;
         }
 
-        @media screen and (max-width: 375px) {
-            max-width: 375px;
-        }
+    @media screen and (max-width: 375px) {
+        max-width: 375px;
+    }
 }
 
 .banking-mobile__container {
@@ -341,7 +338,6 @@ a {
     gap: 40px;
     justify-content: center;
 }
-
 
 .banking-mobile__card-small {
     width: 325px;
@@ -494,7 +490,8 @@ a {
     color: var(--black-color);
     font-weight: 700;
     line-height: 1.3;
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
 
     @media screen and (max-width: 375px) {
             width: 311px;
