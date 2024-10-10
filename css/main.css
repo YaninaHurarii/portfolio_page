@@ -187,6 +187,12 @@ a {
         width: 100%;
     }
 
+    @media screen and (max-width: 500px) {
+        max-width: 500px;
+        width: 100%;
+        gap: 300px;
+    }
+
     @media screen and (max-width: 375px) {
         max-width: 375px;
         width: 100%;
@@ -655,5 +661,133 @@ a {
             padding-bottom: 173px;
         }
     
+}
+
+/* FOOTER */
+
+
+
+.footer__container {
+    background-color: var(--primery-color);
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+   
+}
+
+.footer__content-wrapper {
+    padding: 42px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 139px;
+    max-width: 920px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        padding: 21px 0;
+        width: 100%;
+        }
+    
+    @media screen and (max-width: 375px) {
+        padding: 10px 0;
+        width: 100%;
+        }
+}
+
+.footer__content-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 78px;
+    padding-bottom: 163px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+            padding: 96px 23px 60px 33px;
+        
+        }
+    
+        @media screen and (max-width: 375px) {
+            padding: 53px 16px 113px;
+        }
+} 
+
+.content-link__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
+
+    @media screen and (max-width: 375px) {
+           gap: 20px;
+        }
+
+}
+.button__image-dawn {
+    width: 108px;
+    height: 108px;
+
+    @media screen and (max-width: 375px) {
+        width: 52px;
+        height: 51px;
+        }
+}
+
+.text-arrow {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.button__image-arrow {
+    width: 55px;
+    height: 26px;
+    
+        @media screen and (max-width: 375px) {
+            width: 33px;
+            height: 16px;
+        }
+}
+
+.title__content-link {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    padding-bottom: 17px;
+    
+        @media screen and (max-width: 375px) {
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+}
+
+.subtitle__arrow-link {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+            font-size: 15px;
+        }
+
+}
+
+.footer__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__navbar-items {
+    margin-bottom: 21px;
+    display: flex;
+    gap: 34px;
+}
+
+.subtitle-copyright {
+    padding-bottom: 30px;
 }
 
