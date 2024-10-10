@@ -191,7 +191,6 @@ a {
         max-width: 375px;
         width: 100%;
         gap: 190px;
-        
     }
 }
 
@@ -387,7 +386,7 @@ a {
         }
 }
 
-.bg-image__card {
+.bg-image__card-big {
     background-image: url('../img/assets/mobile-phons.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -401,17 +400,7 @@ a {
             max-width: 311px;
             min-height: 278px;
         }
-    
-        /* &::before {
-            content: '';
-            background-image: url('../img/assets/mobile-phons.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            max-width: 1010px;
-            min-height: 498px;
-            display: block;
-    } */
+
 }
 
 .bg-image__card-1 {
@@ -503,5 +492,168 @@ a {
     color: var(--black-color);
     font-weight: 500;
     line-height: 1.3;
+}
+
+/* Section Graphics Design */
+
+.graphics-design__section {
+    background-color: var(--primery-color);
+        
+
+}
+
+
+.graphics-design__cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+    padding-bottom: 138px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 704px;
+            width: 100%;
+            padding-left: 32px;
+            column-gap: 34px;
+        }
+    
+        @media screen and (max-width: 375px) {
+            grid-template-columns: repeat(1, 1fr);
+            max-width: 343px;
+            padding-left: 16px;
+        
+            gap: 1px;
+    
+        }
+}
+
+.graphics-design__card-big {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding-bottom: 20px;
+}
+
+.graphics-design__title {
+    color: var(--bg-white-color);
+    font-size: 80px;
+    padding: 82px 0 38px;
+    line-height: 1.2;
+
+    @media screen and (max-width: 768px) {
+            padding-left: 32px;
+        }
+
+    @media screen and (max-width: 375px) {
+            font-size: 36px;
+            padding-left: 16px;
+            padding-bottom: 28px;
+        }
+}
+
+.graphics-design__image-big {
+    background-image: url('../img/grd-image-newspaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    max-width: 1055px;
+    width: 100%;
+
+        &::before {
+            content: '';
+            background-image: url('../img/assets/orange-star.png');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 414px;
+            display: block;
+        }
+}
+
+.graphics-design__image-small--one {
+    background-image: url('../img/grd-image-rect.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    max-width: 514px;
+    width: 100%;
+
+        &::before {
+            content: '';
+            background-image: url('../img/assets/yellow-batterfly.png');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 414px;
+            display: block;
+        }
+}
+
+.graphics-design__image-small--two {
+    background-image: url('../img/grd-image-graf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    max-width: 514px;
+    width: 100%;
+    display: block;
+
+    &::before {
+        content: '';
+        background-image: url('../img/assets/blue-flower.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 414px;
+        display: block;
+    }
+}
+
+/*  Section About design   */
+
+
+.section__banner-image {
+    background-image: url('../img/gd-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    width: 100%;
+    border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
+     @media screen and (max-width: 375px) {
+        overflow: hidden;
+        max-height: 498px;
+        }
+}
+
+.about-design__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--secondary-color);
+
+    @media screen and (max-width: 375px) {
+            font-size: 24px;
+            padding: 0 16px;
+        }
+}
+
+.about-design__container {
+    padding-top: 303px;
+    padding-bottom: 323px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+            padding-top: 274px;
+            padding-bottom: 294px;
+        }
+
+    @media screen and (max-width: 375px) {
+            padding-top: 180px;
+            padding-bottom: 173px;
+        }
+    
 }
 
