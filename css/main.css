@@ -52,7 +52,7 @@ $ui-breakpoints-smx--min: '371px'; */
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 12px;
 }
 
 
@@ -61,14 +61,11 @@ $ui-breakpoints-smx--min: '371px'; */
     max-width: 1060px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 12px;
     
-    @media screen and (max-width: 1440px) {
-            max-width: 1440px;
-        }
-    @media screen and (max-width: 1200px) {
+    /* @media screen and (max-width: 1200px) {
             max-width: 1200px;
-        }
+        } */
     @media screen and (max-width: 992px) {
             max-width: 992px;
         }
@@ -82,6 +79,10 @@ $ui-breakpoints-smx--min: '371px'; */
 
 a {
     text-decoration: none;
+}
+
+body {
+    background-color: var(--primery-color);
 }
 
 /* HEADER */
@@ -102,13 +103,8 @@ a {
     display: flex;
     gap: 20px;
 
-    @media screen and (max-width: 1200px) {
-        gap: 10px;
-        }
-
     @media screen and (max-width: 992px) {
-        gap: 5px;
-        font-size: 14px;
+        font-size: 12px;
         }
 
     @media screen and (max-width: 768px) {
@@ -121,6 +117,10 @@ a {
      padding: 10px 13px;
      border: 1px solid var(--secondary-color);
      border-radius: 20px;
+
+    @media screen and (max-width: 992px) {
+        border: none;
+        }
     
     }
 
@@ -141,10 +141,18 @@ a {
 
 .navbar__list-favicon {
     padding-right: 12px;
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+
+    @media screen and (max-width: 992px) {
+            display: none;
+        }
 }
 
 .header__title {
     font-size: 80px;
+    line-height: 1.2;
     color: var(--secondary-color);
     max-width: 846px;
     width: 100%;
@@ -152,18 +160,16 @@ a {
     padding-bottom: 119px;
 
     @media screen and (max-width: 768px) {
-        width: 521px;
         padding-top: 273px;
         padding-bottom: 130px;
-        margin-left: 34px;
+        margin-left: 20px;
     }
 
     @media screen and (max-width: 375px) {
-        width: 326px;
-        max-height: 800px;
         padding-top: 412px;
-        margin-left: 21px;
+        margin-left: 4px;
         font-size: 48px;
+        padding-bottom: 150px;
     }
 }
 
@@ -179,24 +185,21 @@ a {
     max-width: 1440px;
     width: 100%;
     margin-top: 48px;
-    gap: 450px;
+    gap: 420px;
+    margin-left: -12px;
 
     @media screen and (max-width: 768px) {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 34px;
         max-width: 768px;
         width: 100%;
     }
 
-    @media screen and (max-width: 500px) {
-        max-width: 500px;
-        width: 100%;
-        gap: 300px;
-    }
-
     @media screen and (max-width: 375px) {
         max-width: 375px;
+        padding: 0 17px;
         width: 100%;
-        gap: 190px;
+        gap: 170px;
     }
 }
 
@@ -231,14 +234,14 @@ a {
 
     @media screen and (max-width: 768px) {
         padding: 72px 0;
-        margin-left: 34px;
+        margin-left: 10px;
         max-height: 470px;
     }
 
     @media screen and (max-width: 375px) {
         width: 320px;
+        margin-left: 4px;
         max-height: 466px;
-        margin-left: 16px;
     }
 }
 
@@ -315,15 +318,6 @@ a {
     padding-top: 86px;
     padding-bottom: 30px;
 
-        @media screen and (max-width: 768px) {
-            max-width: 703px;
-            padding: 52px 0;
-        }
-
-        @media screen and (max-width: 375px) {
-            max-width: 343px;
-            max-height: 1206px;
-        }
 }
 
 .banking-mobile__card {
@@ -332,25 +326,12 @@ a {
     width: 1050;
     padding: 24px;
     margin-bottom: 63px;
-
-    @media screen and (max-width: 375px) {
-        margin-bottom: 60px;
-        }
 }
 
 .banking-mobile__cards-small {
     display: flex;
     gap: 40px;
     justify-content: center;
-}
-
-.banking-mobile__card-small {
-    width: 325px;
-    padding: 20px;
-
-    @media screen and (max-width: 375px) {
-        padding-bottom: 20px;  
-    }
 }
 
 .banking-mobile__card-link {
@@ -478,7 +459,6 @@ a {
     font-size: 23px;
     font-weight: 700;
     margin: 21px 0;
-
 }
 
 .banking-mobile__subtitle {
@@ -504,30 +484,26 @@ a {
 
 .graphics-design__section {
     background-color: var(--primery-color);
-        
-
 }
-
 
 .graphics-design__cards-wrapper {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 26px;
     padding-bottom: 138px;
+    
 
         @media screen and (max-width: 768px) {
-            max-width: 704px;
-            width: 100%;
-            padding-left: 32px;
             column-gap: 34px;
+            margin-bottom: 129px;
+            padding: 0 10px;
         }
     
         @media screen and (max-width: 375px) {
             grid-template-columns: repeat(1, 1fr);
             max-width: 343px;
-            padding-left: 16px;
-        
-            gap: 1px;
+            gap: 0;
     
         }
 }
@@ -545,12 +521,11 @@ a {
     line-height: 1.2;
 
     @media screen and (max-width: 768px) {
-            padding-left: 32px;
+            padding-left: 10px;
         }
 
     @media screen and (max-width: 375px) {
             font-size: 36px;
-            padding-left: 16px;
             padding-bottom: 28px;
         }
 }
@@ -619,7 +594,7 @@ a {
 /*  Section About design   */
 
 
-.section__banner-image {
+.about-design__section {
     background-image: url('../img/gd-banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -634,6 +609,23 @@ a {
         }
 }
 
+.about-design__container {
+    padding-top: 303px;
+    padding-bottom: 323px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 274px;
+        padding-bottom: 294px;
+    }
+
+    @media screen and (max-width: 375px) {
+        padding-top: 180px;
+        padding-bottom: 173px;
+    }
+
+}
+
 .about-design__title {
     font-size: 48px;
     font-weight: 700;
@@ -641,27 +633,11 @@ a {
     color: var(--secondary-color);
 
     @media screen and (max-width: 375px) {
-            font-size: 24px;
-            padding: 0 16px;
+        font-size: 24px;
+        padding: 0 16px;
         }
 }
 
-.about-design__container {
-    padding-top: 303px;
-    padding-bottom: 323px;
-    text-align: center;
-
-    @media screen and (max-width: 768px) {
-            padding-top: 274px;
-            padding-bottom: 294px;
-        }
-
-    @media screen and (max-width: 375px) {
-            padding-top: 180px;
-            padding-bottom: 173px;
-        }
-    
-}
 
 /* FOOTER */
 
